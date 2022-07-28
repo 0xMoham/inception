@@ -1,7 +1,7 @@
 
 run:
-	docker-compose --project-directory=./srcs up -d --build
+	docker-compose -f srcs/docker-compose.yml up --build
 stop:
-	docker-compose --project-directory=./srcs down
+	docker-compose -f srcs/docker-compose.yml down
 restart:
 	sh ./srcs/restart.sh
